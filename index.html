@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Restaurant demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <div id="cart-toggle-btn">
+            🛒
+            <span id="cart-count">0</span>
+        </div>
+        
+        <div id="cart-panel">
+            <h2>Carrito</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="cart-total">$0</span></p>
+            <button id="checkout-btn" class="btn-1">Order</button>
+            <button id="close-cart" class="btn-1">Close</button>
+        </div>
+
+        <div class="menu container">
+            <img class="logo-1" src="images/logo2.png" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#top">HOME</a></li>
+                        <li><a href="#ult">INFO</a></li>
+                        <li><a href="#prod">PRODUCTS</a></li>
+                    </ul>   
+                </div>
+                <img class="logo-2" src="images/logo2.png" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#info">SCHEDULES</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Hamburger</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur aut aliquid eius animi eos aperiam unde? Adipisci voluptatibus, incidunt blanditiis qui ex quis, doloribus sequi velit aperiam ipsa iure?
+                        
+                                </p>
+                                <div class="botones">
+                                    <a href="#prod" class="btn-1">menu</a>
+                                    <button class="add" class="btn-1" data-name="Hamburger" data-price="50">Buy</button>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Sandwich</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur aut aliquid eius animi eos aperiam unde? Adipisci voluptatibus, incidunt blanditiis qui ex quis, doloribus sequi velit aperiam ipsa iure?
+                        
+                                </p>
+                                <div class="botones">
+                                    <a href="#prod" class="btn-1">menu</a>
+                                    <button class="add" class="btn-1" data-name="sandwich" data-price="50">Buy</button>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>ESPECIAL</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur aut aliquid eius animi eos aperiam unde? Adipisci voluptatibus, incidunt blanditiis qui ex quis, doloribus sequi velit aperiam ipsa iure?
+                        
+                                </p>
+                                <div class="botones">
+                                    <a href="#prod" class="btn-1">menu</a>
+                                    <button class="add" class="btn-1" data-name="SPECIAL" data-price="50">Buy</button>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="products"><div id="prod"></div>
+        <div class="tabs container">
+
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">hamburger</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food1.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 1</h4>
+                                    <span class="price">$30</span>
+                                    <button class="add" data-name="Product1" data-price="30">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 2">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food2.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 2</h4>
+                                    <span class="price">$27</span>
+                                    <button class="add" data-name="Product 2" data-price="27">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 3">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food3.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 3</h4>
+                                    <span class="price">$50</span>
+                                    <button class="add" data-name="Product 3" data-price="50">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Burritos</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <div class="product 4">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food4.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 4</h4>
+                                    <span class="price">$18</span>
+                                    <button class="add" data-name="Product 4" data-price="18">Add</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 5">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food5.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 5</h4>
+                                    <span class="price">$30</span>
+                                    <button class="add" data-name="Product 5" data-price="30">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 6">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food6.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 6</h4>
+                                    <span class="price">$50</span>
+                                    <button class="add" data-name="Product 6" data-price="50">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">MENU</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <div class="product 7">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food7.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 7</h4>
+                                    <span class="price">$30</span>
+                                    <button class="add" data-name="Product 7" data-price="30">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 8">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food8.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 8</h4>
+                                    <span class="price">$80</span>
+                                    <button class="add" data-name="Product 8" data-price="80">Add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product 9">
+                                <div class="product-img">
+                                    <h4>new</h4>
+                                    <img src="images/food9.png" alt="">
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Product 9</h4>
+                                    <span class="price">$40</span>
+                                    <button class="add" data-name="Product 9" data-price="40">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <section class="info container">
+        <div class="info-img">
+            <img src="images/info.png" alt="">
+        </div>
+
+        <div class="info-txt">
+            <h2>¡PROMO!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta saepe maxime suscipit hic tempore dolore ipsum, vero, eius, modi rerum explicabo. Amet quaerat earum quam magni animi dolorem quos.
+
+            </p>
+            <a href="#" class="btn-2">More information</a>
+        </div>
+    </section>
+
+    <section class="horario"><div id="info"></div>
+        <div class="horario-info container">
+            <h2>Information</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>direccion</h4>
+                    <p>miami</p>
+                    <p>los angeles</p>
+                </div>
+                <div class="txt">
+                    <h4>schedules</h4>
+                    <p>Mondays to Fridays : 9 am - 8 pm</p>
+                    <p>Saturdays and Sundays : 11 am - 7 pm</p>
+                </div>
+                <div class="txt">
+                    <h4>cell phone</h4>
+                    <p>55555555555</p>
+                    <p>55555555555</p>
+                </div>
+                <div class="txt">
+                    <h4>Socials</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div id="ult"></div>
+        
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38937719924!2d-80.30779552014592!3d25.782545373833823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1750217482576!5m2!1ses!2sar" width="100%" height="500"></iframe>
+
+    </section>
+
+    <footer class="footer container">
+        <img class="logo-2" src="images/logo2.png" alt="">
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
